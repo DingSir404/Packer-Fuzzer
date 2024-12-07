@@ -1,7 +1,7 @@
 <h1 align="center" >Packer Fuzzer</h1>
 
 <h3 align="center" >一款针对Webpack等前端打包工具所构造的网站进行快速、高效安全检测的扫描工具</h3>
-
+<h4 align="center" >DingTom: 我发现这个工具很好用，但是不太适应高版本的库，我就稍微修改了一下代码，让他更为格式化和适应高版本。</h4>
  <p align="center">
     <a href="https://github.com/rtcatc/Packer-Fuzzer"><img alt="Packer-Fuzzer" src="https://img.shields.io/badge/python-3.X-blueviolet"></a>
     <a href="https://github.com/rtcatc/Packer-Fuzzer"><img alt="Packer-Fuzzer" src="https://img.shields.io/badge/Version-1.4-red"></a>
