@@ -13,7 +13,7 @@ from lib.common.utils import Utils
 from lib.Database import DatabaseType
 from lib.common.CreatLog import creatLog
 from docx.text.paragraph import Paragraph
-from docx.oxml.xmlchemy import OxmlElement
+from docx.oxml.xmlchemy import BaseOxmlElement
 from lib.common.cmdline import CommandLines
 
 
@@ -31,7 +31,7 @@ class Creat_vuln_detail(): # 表格首行背景色设置
         p.addnext(new_tbl)
 
     def insert_paragraph_after(self,paragraph, text=None, style=None):
-        new_p = OxmlElement("w:p")
+        new_p = BaseOxmlElement("w:p")
         paragraph._p.addnext(new_p)
         new_para = Paragraph(new_p, paragraph._parent)
         if text:

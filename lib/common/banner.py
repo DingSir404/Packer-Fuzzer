@@ -15,21 +15,20 @@ Fuchsia = '\033[25;35m'
 cyan = '\033[25;36m'
 end = '\033[0m'
 colors = [red,green,yellow,blue,Fuchsia,cyan]
-
-Banner1 = """{}
+Banner1 = r"""{}
  _______________
 < Packer Fuzzer >
  ---------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\\
+        \\   ^__^
+         \\  (oo)\\_______
+            (__)\\       )\\/\\
                 ||----w |
                 ||     ||
            {}
 {}
-""".format(random.choice(colors),Version,end)
+""".format(random.choice(colors), Version, end)
 
-Banner2 = """{}
+Banner2 = r"""{}
  _______________
 < Packer Fuzzer >
  ---------------
@@ -44,9 +43,9 @@ Banner2 = """{}
     \___)=(___/
        {}
  {}
-""".format(random.choice(colors),Version,end)
+""".format(random.choice(colors), Version, end)
 
-Banner3 = '''{}
+Banner3 = r'''{}
  _______________
 < Packer Fuzzer >
  ---------------
@@ -63,9 +62,9 @@ Banner3 = '''{}
              """"          """""""
              {}
 {}
-'''.format(Fuchsia,Version,end)
+'''.format(Fuchsia, Version, end)
 
-Banner7 = """{}
+Banner7 = r"""{}
  ____            _               _____
 |  _ \ __ _  ___| | _____ _ __  |  ___|   _ ___________ _ __
 | |_) / _` |/ __| |/ / _ \ '__| | |_ | | | |_  /_  / _ \ '__|
@@ -73,10 +72,10 @@ Banner7 = """{}
 |_|   \__,_|\___|_|\_\___|_|    |_|   \__,_/___/___\___|_|
                                 {}
 {}
-""".format(green,Version,end)
+""".format(green, Version, end)
 
 def RandomBanner():
-    # BannerList = [Banner1,Banner2,Banner3,Banner7]
+    # BannerList = [Banner1, Banner2, Banner3, Banner7]
     if CommandLines().cmd().silent == None:
         print(Banner7)
         print("©2023 Poc-Sir、KpLi0rn、Liucy、RachesseHS、Lupin-III")
